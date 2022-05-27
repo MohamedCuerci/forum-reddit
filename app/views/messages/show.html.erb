@@ -7,7 +7,9 @@
             <p class="message-desc"><%= @message.description %></p>
     
             <div class="links btn-group">
-                <%= link_to "Voltar", root_path, class: "btn btn-default" %>
+                <%= link_to "Voltar", root_path, class: "btn btn-secondary btn-sm" %> |
+                <%= link_to "Editar", edit_message_path(@message), class: "btn btn-warning btn-sm" %> |
+                <%= link_to "Excluir", message_path(@message), data: { turbo_method: :delete, turbo_confim: "Tem certeza ?" }, class: "btn btn-danger btn-sm" %>
             </div>
         </div>
     </div>

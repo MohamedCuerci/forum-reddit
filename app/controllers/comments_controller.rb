@@ -2,18 +2,21 @@ class CommentsController < ApplicationController
 
     def create
         @message = Message.find(params[:message_id])
-        @comment = @message.comments.create(comments_params)
-        @comment.user_id = current_user.user_id
+        @comment = @message.comments.create(comment_params)
+        @comment.user_id = current_user.id
+        
 
         if @comment.save
-            redirect_to message_path(@message)
+            flash[:success] = "Artigo criado com sucesso"
+            redirect_to @message
         else
-            render "new"
+            flash[:error] = "Alguma coisa deu errado"
+            render 'message/new', status: :unprocessable_entity
         end
     end
 
     private 
-        def comments_params
-            params.require(:comments).permite(:content)
+        def comment_params
+            params.require(:comment).permit(:content)
         end
 end

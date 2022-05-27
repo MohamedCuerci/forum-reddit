@@ -11,6 +11,19 @@
                 <%= link_to "Editar", edit_message_path(@message), class: "btn btn-warning btn-sm" %> |
                 <%= link_to "Excluir", message_path(@message), data: { turbo_method: :delete, turbo_confim: "Tem certeza ?" }, class: "btn btn-danger btn-sm" %>
             </div>
+            
+            <br>
+            
+            <hr>
+            <h3>Comentários:</h3>
+            <%= render @message.comments %>
+            
+            <br>
+
+            <hr>
+            <h3>Entre na discussão: </h3>
+            <%= render 'comments/form' %>
+
         </div>
     </div>
 </div>

@@ -1,0 +1,13 @@
+
+<%= form_with model: ([ @message, @message.comments.build ]) do |f| %>
+    
+    <%= f.label :content, "conteúdo:" %><br>
+    <%= f.text_area :content %>
+    <% @message.errors.full_messages_for(:content).each do |msg| %>
+      <div><%= msg %></div>
+    <% end %>
+  </div>
+    <br>
+    <%= f.submit "Comentar", class: "btn btn-sucess" %>
+
+<% end %>

@@ -1,14 +1,22 @@
 
-<%= link_to "novo post", new_message_path %>
+<%#= link_to "novo post", new_message_path %>
 
-<% @messages.each do |message| %>
-    
-    <div class="col-md-10 col-md-offset-1">
-        <div class="message">
-            <h2 class="message-title"><%= message.title %></h2>
-            <%= link_to "entrar no debate", message, class: "btn-custom" %>
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-9">
+            <% @messages.each do |message| %>
+
+                <div class="col-md-8 col-md-offset-1">
+                    <div class="message">
+                        <h1 class="message-title"><%= message.title %></h1>
+                        <%= link_to "entrar no debate", message, class: "btn-custom" %>
+                    </div>
+                    <p><%#= message.description %></p>
+                </div>
+
+            <% end %>
         </div>
-        <p><%#= message.description %></p>
+        <div class="col"></div>
     </div>
-
-<% end %>
+</div>

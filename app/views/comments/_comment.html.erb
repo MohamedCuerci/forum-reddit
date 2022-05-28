@@ -1,7 +1,7 @@
 
 
 <div class="comment">
-    <p class="comment-posted-by">User: <%= User.find(comment.user_id).email %><%= time_ago_in_words(comment.created_at) %> atrás</p>
+    <p class="comment-posted-by"><%= User.find(comment.user_id).email %> | <%= time_ago_in_words(comment.created_at) %> atrás</p>
     <p class="comment-content">disse: <%= comment.content %></p>
 
     <div class="links">

@@ -31,8 +31,15 @@ h1, h2, h3, h4, h5, h6 {
     color: orangered;
 }
 
+p.message-posted-by {
+    color: #eee;
+    font-size: 0.6em;
+    height: 25px;        
+}
+
 p {
     color: darkorange;
+    font-size: 1.0em;
 }
 
 hr {
@@ -115,11 +122,17 @@ hr {
     border-bottom: 4px solid #ec6767;
 
     .message-title {
-        font-size: 1.2em;
+        font-size: 1.4em;
         font-family: 'Times New Roman', Times, serif;
         font-weight: 300;
         margin-top: 0;
         margin-bottom: 25px;
+    }
+
+    /* doidera aki */
+    .message-posted-by {
+        color: blue;
+        font-size: 1.2em;
     }
 
     .btn-custom {
@@ -153,7 +166,7 @@ comentarios
 
     .comment-posted-by {
         color: #eee;
-        font-size: 0.8em;
+        font-size: 1.0em;
     }
 
     .links {

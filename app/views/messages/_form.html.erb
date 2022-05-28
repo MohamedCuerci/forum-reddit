@@ -1,16 +1,16 @@
 
 <%= form_with model: @message do |f| %>
-    <div>
+    <div style="color: white">
         <%= f.label :title %><br>
         <%= f.text_field :title %>
     </div>
     <br>
-    <div>
+    <div style="color: white">
         <%= f.label :description %><br>
         <%= f.text_area :description %>
     </div>
-    <div>
-        <%= f.submit "Salvar", class: "btn btn-sucess" %>
+    <div style="color: white">
+        <%= f.submit "Salvar", class: "btn btn-primary" %>
     </div>
 
 <% end %>

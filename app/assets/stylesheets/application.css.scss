@@ -15,3 +15,152 @@
  */
 
 @import "bootstrap";
+
+
+
+
+body {
+    background-color:black;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: orangered;
+}
+
+p {
+    color: darkorange;
+}
+
+hr {
+    color: #fff;
+}
+
+
+.btn-custom {
+    background-color: #fff;
+    color: orangered;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    border-radius: 6px;
+    padding: 10px 20px;
+    &:hover {
+        color:#383838;
+        transition: 0.5s;
+        background-color: #fff;
+        text-decoration: none;
+    }
+}
+
+
+
+.btn:hover {
+    transition: 0.5s;
+    color: #383838;
+    background-color: #fff;
+}
+
+
+
+/* navbar */
+
+.navbar {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+
+.navbar-default {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #1A1A1B;
+
+    .navbar-nav > li > a {
+        color: orangered;
+    }
+
+    .navbar-link {
+        color: orangered;
+    }
+
+    .navbar-brand {
+        color: orangered;
+        letter-spacing: 1.1px;
+        font-size: 1.9em;
+    }
+}
+
+
+/* links */
+.links {
+    margin-top: 20px;
+    .btn-default {
+        color: #ec6767;
+    }
+}
+
+.message {
+    color: #ec6767;
+    box-sizing: border-box;
+    background-color:#484a4b;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 1.4em 1.4em;
+    height: 100px;
+    border-bottom: 4px solid #ec6767;
+
+    .message-title {
+        font-size: 1.2em;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 300;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .btn-custom {
+        margin-top: 12px;
+    }
+}
+
+.message:nth-child(4n) {
+    clear: left;
+}
+
+#card {
+    color: #484a4b;
+}
+
+
+
+/*
+comentarios
+*/
+
+.comment {
+    border-bottom: 1px solid #ec6767;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+
+    .comment-content {
+        font-size: 1.25em;
+    }
+
+    .comment-posted-by {
+        color: #eee;
+        font-size: 0.8em;
+    }
+
+    .links {
+        margin-top: 15px;
+        a {
+            color: #fff;
+            margin-right: 15px;
+        }
+    }
+}

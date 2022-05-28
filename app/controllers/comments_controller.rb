@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+    before_action :authenticate_user!
     before_action :find_message, only: [:create, :edit, :update, :destroy]
     before_action :find_comment, only: [:edit, :update, :destroy]
 
@@ -28,6 +29,7 @@ class CommentsController < ApplicationController
     end
 
     def destroy
+        #ele deleta porém da erro.
         @comment.destroy
         redirect_to message_path(@message)
     end

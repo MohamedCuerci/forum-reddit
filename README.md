@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version: 3.0.4
+* Gems adicionais: devise, bootstrap 
+* Database usado: sqlite 1.4 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+o intuito desse programa não é ter a aparencia do reddit,mas sim ter a mesma dinamica de um forum, no qual varios usuarios consigam interagir entre si, criando postagens e comentarios, criando, editando e deletando suas respectivas ações.
